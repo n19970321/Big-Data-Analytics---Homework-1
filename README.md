@@ -19,9 +19,5 @@
 3. 將searchTwitter的argument進行修改，提升撈取資料的速度，將max_res修改為1000。
 4. 將searchTwitter的迴圈修改為while 1。
 5. 將getTweets中的argument wait_period修改為1。
-6. 為了在程式運行的時候察覺目前的工作狀態，添加以下代碼：
-  print 'trying to access Twitter..'
-  print e
-  print 'start...'
-  print 'stop...'
+6. 為了在程式運行的時候察覺目前的工作狀態，添加以下代碼：print 'trying to access Twitter..'、print e、print 'start...'、print 'stop...'。
 7. 將searchTwitter中的if len(statuses) > max_results的迴圈刪除。
