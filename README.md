@@ -14,20 +14,20 @@
 
 以下說明參考Twitter官方的說明（https://dev.twitter.com/overview/api/tweets），然而因為部分field的值與官方產生出入，故以下說明將比對"撈取的資料"與"官方說明"的差異，並且進行描述。
 
-contributors: 類型為Objects，此field描述發佈Tweet的人，此field可以是空的。
-truncated: 類型為Boolean。在Tweet被Retweet的時候，如果某Tweet超過140個字元，那麼將以"..."省略部分文字，該field則表示Tweet是否被省略。
-text: 類型為String，Tweet的內容，字元編碼為UTF-8。
-is_quote_status（官方的說明並無此field）:描述該Tweet是否被引用，如果否，則為False。
-in_reply_to_status_id: 類型為Int64，如果該Tweet是一篇回覆，則此field便是發佈原始Tweet的使用者的ID，此field可以是空的。
-id: 類型為Int64，發佈Tweet的使用者的ID。
-favorite_count: 類型為Integer，對該Tweet表示“liked”的使用者人數人，此field可以是空的。
-entities: 類型為Entities，包括多種field，如id、indices、id_str等，詳見（https://dev.twitter.com/overview/api/entities-in-twitter-objects）。
-retweeted: 類型為Boolean，該Tweet是否被Retweet，如果否，則為False。
-coordinates: 類型為Collection of Float，該Tweet被發佈地點的經緯度。
-source: 類型為String，被用來發佈該Tweet的，工具程式。
-in_reply_to_screen_name: 類型為String，如果該Tweet是一篇回覆，那麼該field顯示發佈原始Tweet的使用者在用戶端顯示的名稱，此field可以是空的。
-in_reply_to_user_id: 類型為Int64，如果該Tweet是一篇回覆，那麼該field顯示發佈原始Tweet的使用者的ID，此field可以是空的。
-retweet_count: 類型為Int，該Tweet被Retweet的次數。
+1. contributors: 類型為Objects，此field描述發佈Tweet的人，此field可以是空的。
+2. truncated: 類型為Boolean。在Tweet被Retweet的時候，如果某Tweet超過140個字元，那麼將以"..."省略部分文字，該field則表示Tweet是否被省略。
+3. text: 類型為String，Tweet的內容，字元編碼為UTF-8。
+4. is_quote_status（官方的說明並無此field）:描述該Tweet是否被引用，如果否，則為False。
+5. in_reply_to_status_id: 類型為Int64，如果該Tweet是一篇回覆，則此field便是發佈原始Tweet的使用者的ID，此field可以是空的。
+6. id: 類型為Int64，發佈Tweet的使用者的ID。
+7. favorite_count: 類型為Integer，對該Tweet表示“liked”的使用者人數人，此field可以是空的。
+8. entities: 類型為Entities，包括多種field，如id、indices、id_str等，詳見（https://dev.twitter.com/overview/api/entities-in-twitter-objects）。
+9. retweeted: 類型為Boolean，該Tweet是否被Retweet，如果否，則為False。
+10. coordinates: 類型為Collection of Float，該Tweet被發佈地點的經緯度。
+11. source: 類型為String，被用來發佈該Tweet的，工具程式。
+12. in_reply_to_screen_name: 類型為String，如果該Tweet是一篇回覆，那麼該field顯示發佈原始Tweet的使用者在用戶端顯示的名稱，此field可以是空的。
+13. in_reply_to_user_id: 類型為Int64，如果該Tweet是一篇回覆，那麼該field顯示發佈原始Tweet的使用者的ID，此field可以是空的。
+14. retweet_count: 類型為Int，該Tweet被Retweet的次數。
 
 # 範例程式的修改
 
