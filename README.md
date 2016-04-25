@@ -12,7 +12,7 @@
 
 # 資料的欄位
 
-以下說明參考Twitter官方的說明（https://dev.twitter.com/overview/api/tweets），然而因為部分field的值與官方產生出入，故以下說明將比對"撈取的資料"與"官方說明"的差異，並且進行描述。
+以下說明參考Twitter官方的說明[備註1]，然而因為部分field的值與官方產生出入，故以下說明將比對"撈取的資料"與"官方說明"的差異，並且進行描述。
 
 1. contributors: 類型為Objects，此field描述發佈Tweet的人，此field可以是空的。
 2. truncated: 類型為Boolean。在Tweet被Retweet的時候，如果某Tweet超過140個字元，那麼將以"..."省略部分文字，該field則表示Tweet是否被省略。
@@ -21,7 +21,7 @@
 5. in_reply_to_status_id: 類型為Int64，如果該Tweet是一篇回覆，則此field便是發佈原始Tweet的使用者的ID，此field可以是空的。
 6. id: 類型為Int64，發佈Tweet的使用者的ID。
 7. favorite_count: 類型為Integer，對該Tweet表示“liked”的使用者人數人，此field可以是空的。
-8. entities: 類型為Entities，包括多種field，如id、indices、id_str等，詳見（https://dev.twitter.com/overview/api/entities-in-twitter-objects）。
+8. entities: 類型為Entities，包括多種field，如id、indices、id_str等，詳見[備註2]。
 9. retweeted: 類型為Boolean，該Tweet是否被Retweet，如果否，則為False。
 10. coordinates: 類型為Collection of Float，該Tweet被發佈地點的經緯度。
 11. source: 類型為String，被用來發佈該Tweet的，工具程式。
@@ -38,3 +38,6 @@
 5. 將getTweets中的argument wait_period修改為1。
 6. 為了在程式運行的時候察覺目前的工作狀態，添加以下代碼：print 'trying to access Twitter..'、print e、print 'start...'、print 'stop...'。
 7. 將searchTwitter中的if len(statuses) > max_results的迴圈刪除。
+
+備註1: https://dev.twitter.com/overview/api/tweets
+備註2: https://dev.twitter.com/overview/api/entities-in-twitter-objects
