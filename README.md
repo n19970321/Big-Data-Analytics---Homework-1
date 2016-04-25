@@ -39,5 +39,7 @@
 6. 為了在程式運行的時候察覺目前的工作狀態，添加以下代碼：print 'trying to access Twitter..'、print e、print 'start...'、print 'stop...'。
 7. 將searchTwitter中的if len(statuses) > max_results的迴圈刪除。
 
-備註1: https://dev.twitter.com/overview/api/tweets
-備註2: https://dev.twitter.com/overview/api/entities-in-twitter-objects
+# 備註
+
+1. https://dev.twitter.com/overview/api/tweets
+2. https://dev.twitter.com/overview/api/entities-in-twitter-objects
