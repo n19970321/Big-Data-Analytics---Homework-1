@@ -12,7 +12,7 @@
 
 # 資料的欄位
 
-以下說明參考Twitter官方的說明[備註1]，然而因為部分field的值與官方產生出入，故以下說明將比對"撈取的資料"與"官方說明"的差異，並且進行描述。
+以下說明參考Twitter官方的說明[備註1]，然而因為部分field的值與官方說明產生出入，故以下說明將比對"撈取的資料"與"官方說明"的差異，並且進行描述。
 
 1. contributors: 類型為Objects，此field描述發佈Tweet的人，此field可以是空的。
 2. truncated: 類型為Boolean。在Tweet被Retweet的時候，如果某Tweet超過140個字元，那麼將以"..."省略部分文字，該field則表示Tweet是否被省略。
